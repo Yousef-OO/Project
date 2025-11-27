@@ -13,7 +13,6 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # Load model files
 knn = pickle.load(open(os.path.join(BASE_DIR, "knn_model.pkl"), "rb"))
-print(knn)
 movies_df = pickle.load(open(os.path.join(BASE_DIR, "movies_dataframe.pkl"), "rb"))
 scaler = pickle.load(open(os.path.join(BASE_DIR, "scaler.pkl"), "rb"))
 
